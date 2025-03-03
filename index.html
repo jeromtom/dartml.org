@@ -75,12 +75,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
         async function submitToGoogleForm(e) {
             e.preventDefault();
@@ -90,13 +84,16 @@
             const successMessage = document.getElementById('submitSuccessMessage');
             const errorMessage = document.getElementById('submitErrorMessage');
             
-            // Google Form submission URL
-            const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfCUxJ7Zn7TXqQvYn8GvtB9BYp0O0ZEHbHhXKyFTXKWYfFbxA/formResponse';
+            // Google Form submission URL - updated to your form
+            const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScAQm8WiM9kGFqQhbX0Z94PCmVEXJ12BaWSwp_FCsGMIAbRcQ/formResponse';
             
             try {
                 // Create form data
                 const formData = new FormData();
-                formData.append('entry.1595231017', email); // Replace with your actual entry ID
+                formData.append('entry.1595231017', email); // Your entry ID is correct
+                
+                console.log('Submitting email:', email);
+                console.log('To URL:', googleFormUrl);
                 
                 // Submit to Google Form
                 const response = await fetch(googleFormUrl, {
