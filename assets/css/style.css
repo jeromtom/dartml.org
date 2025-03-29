@@ -7502,7 +7502,7 @@ del {
 
 .team-social a {
     color: #008080; /* Matches your teal theme */
-    font-size: 30px;
+    font-size: 50px;
     transition: color 0.3s ease;
 }
 
@@ -7529,6 +7529,7 @@ del {
 
 .contact-link {
     color: #000; /* Black text for links */
+    font-size: 20px;
 }
 
 .contact-link:hover {
