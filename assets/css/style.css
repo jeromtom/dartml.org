@@ -4292,7 +4292,6 @@ hr {
 
 .about-low-area::before {
     position: absolute;
-    background: #F8F8FC;
     content: "";
     height: 109%;
     width: 66%;
