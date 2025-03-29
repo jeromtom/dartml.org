@@ -438,7 +438,7 @@ hr {
 
 .btn:hover {
     background-position: left;
-    background-image: linear-gradient(to left, #008080, #e6571e, #008080) !important;
+    background-image: linear-gradient(to left, #008080, #008080, #7ed957) !important;
     color: #fff
 }
 
